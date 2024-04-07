@@ -20,7 +20,7 @@
 ## Possible Enhancements
 * CI/CD pipeline
 * Save data to local Room database
-* More tests (beside the existing `CurrencyUtilsTests`)
+* More tests (aside from the existing `CurrencyUtilsTests`)
 * Negative numbers are automatically converted to positives and added, display suitable message to user when this is done
 * Display a suitable error message when invalid amounts are entered
 * Centralise paddings, styles in some places
