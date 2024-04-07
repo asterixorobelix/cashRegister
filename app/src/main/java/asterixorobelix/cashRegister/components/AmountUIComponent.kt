@@ -14,6 +14,9 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.onKeyEvent
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -40,7 +43,14 @@ fun CurrencyAmountUI(onDone: (String) -> Unit) {
         textStyle = amountEntryTextStyle,
         modifier = Modifier
             .fillMaxWidth()
-            .height(100.dp),
+            .height(100.dp)
+            .onKeyEvent {
+                if (it.key == Key.Delete || it.key == Key.Backspace) {
+                    registerAmount = TextFieldValue(registerAmount.text.dropLast(1))
+                    true
+                } else
+                    false
+            },
         value = registerAmount,
         colors = TextFieldDefaults.colors(
             focusedContainerColor = LightestBlue,
