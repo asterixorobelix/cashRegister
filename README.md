@@ -30,4 +30,4 @@ In the interest of time, a suitable Android Native keyboard is used instead of t
 
 ## Behaviour
 
-![video](https://drive.google.com/uc?export=view&id=1uB-I75KMpUms4_a0N678jjSbQWnulzr_)
+https://drive.google.com/uc?export=view&id=1uB-I75KMpUms4_a0N678jjSbQWnulzr_
