@@ -29,5 +29,6 @@
 In the interest of time, a suitable Android Native keyboard is used instead of the custom keyboard required by the design. This deviation from the design should also be more intuitive to the user, while also being less bug prone.
 
 ## Behaviour
+[Screen_recording_20240407_171141.webm](https://github.com/asterixorobelix/cashRegister/assets/20531795/d82c434d-bb54-4be7-8243-c4a5ee367e4f)
 
-https://drive.google.com/uc?export=view&id=1uB-I75KMpUms4_a0N678jjSbQWnulzr_
+
