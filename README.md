@@ -1,6 +1,6 @@
 # cashRegister
 
-![Screenshot](https://drive.google.com/uc?export=view&id=1tsBTnwXfjU7wbp2GM__VC_diA3A3xKB8/view?usp=sharing)
+![Screenshot](https://drive.google.com/uc?export=view&id=1tsBTnwXfjU7wbp2GM__VC_diA3A3xKB8)
 
 ## Architecture
 * [Koin](https://github.com/InsertKoinIO/koin)
