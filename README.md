@@ -27,3 +27,7 @@
 
 ## Notes
 In the interest of time, a suitable Android Native keyboard is used instead of the custom keyboard required by the design. This deviation from the design should also be more intuitive to the user, while also being less bug prone.
+
+## Behaviour
+
+![video](https://drive.google.com/uc?export=view&id=1uB-I75KMpUms4_a0N678jjSbQWnulzr_)
