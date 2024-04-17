@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/CashRegisterFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="asterixorobelix.cashRegister.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/CashRegisterFragment"
+        android:name="asterixorobelix.cashRegister.CashRegisterFragment"
+        android:label="@string/cash_register_fragment_label"
+        tools:layout="@layout/fragment_cash_register">
     </fragment>
 </navigation>

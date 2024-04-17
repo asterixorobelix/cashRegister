@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -19,9 +18,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.State
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.stringResource
@@ -29,22 +25,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.viewModelScope
 import asterixorobelix.cashRegister.components.CurrencyAmountUI
-import asterixorobelix.cashRegister.databinding.FragmentFirstBinding
+import asterixorobelix.cashRegister.databinding.FragmentCashRegisterBinding
 import asterixorobelix.cashRegister.theme.DarkBlue
 import asterixorobelix.cashRegister.theme.LightestBlue
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class CashRegisterFragment : Fragment() {
 
     private val amountViewModel: AmountViewModel by viewModel()
-    private var _binding: FragmentFirstBinding? = null
+    private var _binding: FragmentCashRegisterBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -55,7 +48,7 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = FragmentCashRegisterBinding.inflate(inflater, container, false)
         _binding?.composeView?.apply {
             setContent {
                 setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
