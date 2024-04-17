@@ -67,7 +67,9 @@ fun CurrencyAmountUI(onDone: (String) -> Unit) {
             )
         },
         onValueChange = {
-            registerAmount = TextFieldValue(it.text.take(MAX_INPUT))
+            it.text.take(MAX_INPUT).toIntOrNull()?.let {legitimateAmount ->
+                registerAmount = TextFieldValue(legitimateAmount.toString())
+            }
         },
         singleLine = true,
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
